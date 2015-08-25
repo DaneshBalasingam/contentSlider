@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	
+    <title>Content Slider Demo</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/contentSlider.css" />
+	
+	
+</head>
+
+
+<body>	
+
+	<div id="carousel">
+	
+		<div id="panels">
+				<div data-item="0" class="panel current"><img src="images/Paris.jpg"></div>
+				<div data-item="1" class="panel"><img src="images/Paris-2.jpg"></div>
+				<div data-item="2" class="panel"><img src="images/Hong-Kong.jpg"></div>
+				<div data-item="3" class="panel"><img src="images/Hong-Kong-2.jpg"></div>
+				<div data-item="4" class="panel"><img src="images/London.jpg"></div>
+				<div data-item="5" class="panel"><img src="images/London-2.jpg"></div>
+				<div data-item="6" class="panel"><img src="images/San-Francisco.jpg"></div>
+				<div data-item="7" class="panel"><img src="images/San-Francisco-2.jpg"></div>
+		 </div>
+		 
+		 <div id="carousel_control" class="clearfix">
+		 
+			 
+			 <div id="left" class="carousel_arrows">left</div>
+			 <div class="slider_dots" >
+				
+				<span data-slide-to="0" class="dot active"> &bull;</span>
+				<span data-slide-to="1" class="dot"> &bull;</span>
+				<span data-slide-to="2" class="dot"> &bull;</span>
+				<span data-slide-to="3" class="dot"> &bull;</span>
+				<span data-slide-to="4" class="dot"> &bull;</span>
+				<span data-slide-to="5" class="dot"> &bull;</span>
+				<span data-slide-to="6" class="dot"> &bull;</span>
+				<span data-slide-to="7" class="dot"> &bull;</span>
+									
+			</div>
+
+			
+			<div id="right" class="carousel_arrows">right</div>
+			
+		</div>
+
+	</div>
+		
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="js/contentSlider.js"></script>
+	
+	<script>
+		 $(document).ready(function (){
+			'use strict';
+
+			$('#carousel').contentSlider({
+				
+				autoScrolling: false
+			});
+		  
+		});
+	
+	</script>
+</body>
+</html>

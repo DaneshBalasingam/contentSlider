@@ -1,0 +1,92 @@
+.clearfix:before,.clearfix:after {
+	content:"";
+	display:table;
+}
+
+.clearfix:after {
+	clear:both;
+}
+
+#carousel {
+	width: 50%;
+	margin: 0 auto;
+}
+
+#panels {
+	height:300px;
+	width: 100%;
+	
+	position:relative;
+	overflow: hidden;	
+}
+
+#panels div {
+	position:absolute;
+	z-index: 0;
+}
+
+#panels div.previous {
+	left: -960px;
+	z-index: 1;
+}
+
+#panels div.current {
+	left: 0px;
+	z-index: 1;
+}
+
+#panels div.next {
+	left: 960px;
+	z-index: 1;
+}
+
+.panel {
+	position: absolute;
+		
+}
+	
+.panel img {
+	   
+	overflow: hidden;
+}
+
+#carousel_control {
+	margin: 20px auto;
+	width: 50%;
+	text-align: center;
+	
+}
+
+.carousel_arrows {
+	font-size: 2em;
+	width: 50px;
+	text-align: center;
+	padding: 2px 20px;
+	margin-top: 10px;
+	cursor: pointer;
+	background-color: orange;
+	float: left;
+	
+}
+	
+
+
+.slider_dots {
+	
+	margin-top: 0px;
+	padding-top: 0px;
+	margin-left: 20px;
+	margin-right: 20px;
+	float: left;
+
+}
+.dot {	
+	font-size: 3em;
+	color: #696969;
+
+	cursor: pointer;
+}
+
+.active {
+	color: #4682B4 !important;
+}
