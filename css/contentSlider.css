@@ -20,35 +20,27 @@
 	overflow: hidden;	
 }
 
-#panels div {
+.panel {
+	background-color: transparent;
 	position:absolute;
-	z-index: 0;
+	z-index: -1;
 }
 
-#panels div.previous {
+.panel.previous {
 	left: -960px;
 	z-index: 1;
 }
 
-#panels div.current {
+.panel.current {
 	left: 0px;
 	z-index: 1;
 }
 
-#panels div.next {
+.panel.next {
 	left: 960px;
 	z-index: 1;
 }
 
-.panel {
-	position: absolute;
-		
-}
-	
-.panel img {
-	   
-	overflow: hidden;
-}
 
 #carousel_control {
 	margin: 20px auto;

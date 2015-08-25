@@ -125,7 +125,7 @@
             var oNxtItem = oCurItem.next();
 
             if (oNxtItem.length == 0)
-                oNxtItem = $('#panels div:first');
+                oNxtItem = $('#panels > div:first');
 
             oNxtItem.addClass('next');
 			
@@ -156,7 +156,7 @@
             var oPrevItem = oCurItem.prev();
 
             if (oPrevItem.length == 0)
-                oPrevItem = $('#panels div:last');
+                oPrevItem = $('#panels > div:last');
 
             oPrevItem.addClass('previous');
 			
